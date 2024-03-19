@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Navbar from './components/navbar/Navbar.component';
+import HomePage from './pages/home/Home.component';
+import HistoryPage from './pages/history/History.component';
+import DetailsPage from './pages/details/Details.component';
 
 function App() {
+  const [currentPage, setCurrentPage] = React.useState("home");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar title="HOHOHO" page={currentPage} navigate={setCurrentPage} />
+      {currentPage === "home" &&
+        <HomePage />
+      }
+      {currentPage === "history" &&
+        <HistoryPage />
+      }
+      {currentPage === "details" &&
+        <DetailsPage />
+      }
     </div>
   );
 }
