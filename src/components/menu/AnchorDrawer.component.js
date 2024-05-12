@@ -7,6 +7,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import { IconButton } from '@mui/material';
+import { DETAILS_PAGE_TITLE } from '../../pages/details/Details.component';
+import { HISTORY_PAGE_TITLE } from '../../pages/history/History.component';
 
 export default function AnchorDrawer(props) {
     const [state, setState] = React.useState(false);
@@ -44,13 +46,13 @@ export default function AnchorDrawer(props) {
 
                         <ListItem key={'HISTORY'} onClick={() => props.navigate('history')}>
                             <ListItemButton>
-                                <ListItemText sx={{ textAlign: 'center' }} primary={'HISTORY'} />
+                                <ListItemText sx={{ textAlign: 'center' }} primary={HISTORY_PAGE_TITLE} />
                             </ListItemButton>
                         </ListItem>
 
                         <ListItem key={'CONTACT-INFO'} onClick={() => props.navigate('details')}>
                             <ListItemButton>
-                                <ListItemText sx={{ textAlign: 'center' }} primary={'CONTACT INFO'} />
+                                <ListItemText sx={{ textAlign: 'center' }} primary={DETAILS_PAGE_TITLE} />
                             </ListItemButton>
                         </ListItem>
                     </List>

@@ -1,6 +1,8 @@
 import { Box, Container, Divider, Typography } from '@mui/material';
 import React from 'react';
 
+export const HOME_PAGE_TITLE = "STELLA SKY HOLDING";
+
 const HomePage = () => {
 
     return (
@@ -29,12 +31,26 @@ const HomePage = () => {
                             }} alt='' />
                     </Box>
                     <Box sx={{ width: { xs: "90%", md: "40%" }, }}>
+                        <Typography variant="h6"
+                            sx={{
+                                paddingTop: { xs: "50px", md: "0px" },
+                                paddingInline: "30px",
+                                textAlign: "left"
+                            }}>Fondata nel 2019...</Typography>
+                        <Divider
+                            sx={{
+                                borderWidth: "1px",
+                                borderColor: "red",
+                                marginInline: "30px",
+                                marginBottom: '20px',
+                            }} />
+
                         <Typography sx={{
-                            paddingBlock: { xs: "50px", md: "0px" },
+                            paddingBottom: { xs: "50px", md: "0px" },
                             paddingInline: "30px",
-                            textAlign: "left"
+                            textAlign: "justify"
                         }}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labori
+                            Fondata nel 2019 e specializzata nella produzione e nella fornitura di maglieria, Stella Sky Holding ha avuto una rapida e costante crescita ed è attualmente fornitrice di marchi nazionali e internazionali, arrivando ad una produzione annuale di circa cinquecento mila capi.
                         </Typography>
                     </Box>
                 </Container>
@@ -51,14 +67,27 @@ const HomePage = () => {
                     paddingBlock: "10px",
                 }}>
                     <Box sx={{ width: { xs: "90%", md: "40%" }, maxHeight: "350px" }}>
+                        <Typography variant="h6"
+                            sx={{
+                                paddingTop: { xs: "50px", md: "0px" },
+                                paddingInline: "30px",
+                                textAlign: "left"
+                            }}>La Holding nasce...</Typography>
+                        <Divider
+                            sx={{
+                                borderWidth: "1px",
+                                borderColor: "red",
+                                marginInline: "30px",
+                                marginBottom: '20px',
+                            }} />
                         <Typography sx={{
-                            paddingBlock: { xs: "50px", md: "0px" },
+                            paddingBottom: { xs: "50px", md: "0px" },
                             paddingInline: "30px",
-                            textAlign: { xs: "left", md: "right" },
-                            overflow: "hidden",
-                            whiteSpace: "wrap"
+                            textAlign: 'justify',
+                            // overflow: "hidden",
+                            // whiteSpace: "wrap"
                         }}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            La Holding nasce dall'esperienza del suo CEO, Sig. ChengJun Jiang che, arrivato in Italia nel 2004, ha poi creato diverse attività sempre nell'ambito dell'abbigliamento, unendo magistralmente inventiva cinese con maestranza e management italiano.
                         </Typography>
                     </Box>
                     <Box sx={{
